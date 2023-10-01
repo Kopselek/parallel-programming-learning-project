@@ -3,6 +3,7 @@ import math
 import time
 import matplotlib.pyplot as plt
 
+n_values = [10000, 25000, 50000, 100000, 500000]
 selected_number = 100
 
 
@@ -87,7 +88,6 @@ sequential_times = []
 parallel_threads_times = []
 parallel_processes_times = []
 
-n_values = [10000, 25000, 50000, 100000, 500000]
 for n in n_values:
     sequential_time = measure_time_sequential(operation_func, n)
     parallel_threads_time = measure_time_threads(operation_func, n)
@@ -110,7 +110,7 @@ plt.bar([i + width for i in x], parallel_processes_times, width=width, label="Pa
 
 plt.xlabel("n")
 plt.ylabel("Time (seconds)")
-plt.title("Performance Comparison for Different n Values (calculate_expression)")
+plt.title("Performance Comparison for Different n Values")
 plt.xticks(x, labels)
 plt.legend()
 plt.grid(True)
