@@ -89,9 +89,9 @@ parallel_processes_times = []
 
 n_values = [10000, 25000, 50000, 100000, 500000]
 for n in n_values:
-    sequential_time = measure_time_sequential(fibonacci, n)
-    parallel_threads_time = measure_time_threads(fibonacci, n)
-    parallel_processes_time = measure_time_threads(fibonacci, n, "threads")
+    sequential_time = measure_time_sequential(operation_func, n)
+    parallel_threads_time = measure_time_threads(operation_func, n)
+    parallel_processes_time = measure_time_threads(operation_func, n, "threads")
 
     sequential_times.append(sequential_time)
     parallel_threads_times.append(parallel_threads_time)
