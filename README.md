@@ -45,7 +45,7 @@ Parallel (Processes): 2.980709 seconds
 operation is **x^(1/3)+2*x+4**
 
 Example output:
-![](https://github.com/Kopselek/AgarioTS/blob/main/presentation.png)
+![](https://github.com/Kopselek/parallel-programming-learning-project/edit/main/presentation.png)
 
 
 ## Conclusion
@@ -61,4 +61,4 @@ change (line 93-95) to fibonacci function (i suggest change n_values to much low
 ```  
 and now we can see different results:  
 (test on ```[10, 15, 20, 25, 30]``` values)  
-![](https://github.com/Kopselek/AgarioTS/blob/main/presentation2.png)
+![](https://github.com/Kopselek/parallel-programming-learning-project/edit/main/presentation2.png)
